@@ -1,0 +1,162 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.background {
+	height: 100%;
+	background: url('../img/sky.jpg');
+	background-position: bottom left;
+	animation: sky 15s linear infinite; 
+}
+
+.city {
+	width: 100%;
+	height: 60px;
+	background: url('../img/city1.png');
+	padding-top: 44%;
+	z-index: 10;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	animation: city 25s linear infinite;
+}
+
+.plane {
+	position: absolute;
+	left: -65px;
+	top: 10px;
+	width: 150px;
+	z-index: 1;
+	animation: plane 30s linear infinite;
+}
+.car {
+	position: absolute;
+	left: 70px;
+	bottom: 10px;
+	width: 190px;
+	z-index: 2;
+	animation: car 1s linear infinite;
+}
+
+.motorbike {
+	position: absolute;
+	left: 400px;
+	bottom: 85px;
+	width: 120px;
+	z-index: 2;
+	animation: motor 1s linear infinite;
+}
+.police {
+	position: absolute;
+	right: 270px;
+	bottom: 90px;
+	width: 158px;
+	z-index: 3;
+	animation: police 1s linear infinite;
+}
+.taxi {
+	position: absolute;
+	left: 580px;
+	bottom: -10px;
+	width: 150px;
+	z-index: 2;
+	animation: taxi 1s linear infinite;
+}
+.truck {
+	position: absolute;
+	right: 100px;
+	bottom: 12px;
+	width: 190px;
+	z-index: 3;
+	animation: truck 1s linear infinite;
+}
+
+@keyframes sky {
+	from {
+		background-position: bottom left;
+	}
+
+	to {
+		background-position: bottom right;
+	}
+}
+@keyframes city {
+	from {
+		background-position: bottom left;
+	}
+
+	to {
+		background-position: bottom right;
+	}
+}
+@keyframes plane {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(1520px);
+	}
+}
+@keyframes car {
+	100% {
+		transform: translateY(-2px);
+	}
+
+	50% {
+		transform: translateY(3px);
+	}
+	0% {
+		transform: translateY(-2px);
+	}
+}
+@keyframes motor {
+	100% {
+		transform: translateY(-1px);
+	}
+
+	50% {
+		transform: translateY(4px);
+	}
+	0% {
+		transform: translateY(-1px);
+	}
+}
+@keyframes police {
+	100% {
+		transform: translateY(-2px);
+	}
+	50% {
+		transform: translateY(3px);
+	}
+	0% {
+	    transform: translateY(-3px);
+	}
+}
+@keyframes taxi {
+	100% {
+		transform: translateY(-1px);
+	}
+
+	50% {
+		transform: translateY(3px);
+	}
+	0% {
+		transform: translateY(-2px);
+	}
+}
+@keyframes truck {
+	100% {
+		transform: translateY(-2px);
+	}
+
+	50% {
+		transform: translateY(5px);
+	}
+	0% {
+		transform: translateY(-2px);
+	}
+}
